@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  <nav>
+  </nav>
+
+  <main>
+
+    <!-- Login page to create username by combining initials of name with name of school ex. JAWilmington. -->
+    <div class="col-25 login-page">
+
+      <!-- form to register and get username -->
+      <div id="registerForm" class="registerForm">
+
+        <h2>Register Form</h2>
+
+        <input class="center col-75 txtCenter" id="firstName" placeholder="First Name" name="firstName" value="">
+        <input class="center col-75 txtCenter" id="lastName" placeholder="Last Name" name="lastName" value="">
+        <input class="center col-75 txtCenter" id="schoolName" placeholder="School Name" name="schoolName" value="">
+
+        <button class="submitBtn col-50" type="submit" onclick="submitInfo()" name="button">Create</button>
+      </div>
+
+    </div>
+
+    <!-- displays after registration -->
+    <div class="col-25 submitForm center" id="submitForm">
+      <p id="text" class="txtCenter"></p>
+      <p class="center txtCenter" id="usrName"></p>
+
+    </div>
+
+
+  </main>
+
+  <footer>
+  </footer>
+  <script type="text/javascript" src="js/formScript.js"></script>
+</body>
+
+</html>
